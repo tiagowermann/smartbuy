@@ -1,0 +1,23 @@
+SMAP
+listaproduto_jsp.java
+JSP
+*S JSP
+*F
++ 0 listaproduto.jsp
+listaproduto.jsp
++ 1 menuSmartBuy.jsp
+menuSmartBuy.jsp
+*L
+5,18:56
+5#1,155:74
+22#0,8:228
+30,2:237
+31,14:239
+45,3:254
+47,2:257
+49:259,5
+50,7:264,3
+57,5:285
+62,2:291
+63,13:293
+*E

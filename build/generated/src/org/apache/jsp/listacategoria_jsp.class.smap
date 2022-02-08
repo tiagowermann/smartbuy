@@ -1,0 +1,23 @@
+SMAP
+listacategoria_jsp.java
+JSP
+*S JSP
+*F
++ 0 listacategoria.jsp
+listacategoria.jsp
++ 1 menuSmartBuy.jsp
+menuSmartBuy.jsp
+*L
+5,18:56
+5#1,155:74
+22#0,7:228
+29,2:236
+30,9:238
+39,3:248
+41,2:251
+43:253,5
+44,3:258,3
+47,5:267
+52,2:273
+53,13:275
+*E

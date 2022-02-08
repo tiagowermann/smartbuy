@@ -1,0 +1,20 @@
+SMAP
+selectProduto_jsp.java
+JSP
+*S JSP
+*F
++ 0 selectProduto.jsp
+selectProduto.jsp
++ 1 menuSmartBuy.jsp
+menuSmartBuy.jsp
+*L
+5,16:55
+5#1,155:71
+20#0,11:225
+31,4:237
+34:241
+35:242,6
+36:248
+37,2:250
+38,9:252
+*E
