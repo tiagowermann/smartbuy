@@ -118,6 +118,7 @@ public class filtro extends HttpServlet implements Filter {
         urls.add("/smartBuy/img/EscritaEcomerce1.png");
         urls.add("/smartBuy/img/EscritaEcomerce2.png");
         urls.add("/smartBuy/img/EscritaEcomerce3.png");
+        urls.add("/smartBuy/img/mountain.jpg");
         urls.add("/smartBuy/img/background.jpg");
         urls.add("/smartBuy/img/bg-register-page.jpg");
         urls.add("/smartBuy/js/bootstrap.bundle.min.js");

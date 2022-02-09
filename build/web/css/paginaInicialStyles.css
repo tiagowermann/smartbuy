@@ -13,6 +13,7 @@
 body {
     background-size: cover; /*vai tentar ocupar a imagem inteira na tela*/
     background-position-y: -100px; /*a imagem sobe e aparece mais a cidade*/
+    background-image: url('../img/mountain.jpg');
 }
 
 
@@ -34,7 +35,7 @@ h1 {
 }
 
 
-/* container login */
+/* container */
 
 #listaprodutoInicial-container {
     background-color: #fff;  
