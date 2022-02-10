@@ -19,7 +19,7 @@
         <%@include file="listaprodutoInicial.jsp" %>
         
         
-        
+        <!--<input type="file" accept="image/*" />-->
         
     </body>
 </html>

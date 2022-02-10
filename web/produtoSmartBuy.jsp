@@ -50,24 +50,24 @@
                     <input type="hidden" name="id"  value="<%=produto.getId()%>">
 
                     <div class="full-box">
-                        <label for="descricao">Descrição</label>
+                        <label for="descricao">Description</label>
                         <input type="text" name="descricao" placeholder="Enter description" autocomplete="on" value="<%=produto.getDescricao()%>">
                     </div>
 
                     <div class="half-box spacing">
-                        <label for="quantidade">Quantidade</label>
+                        <label for="quantidade">Quantity</label>
                         <input type="number" name="quantidade" placeholder="Enter the quantity" value="<%=produto.getQuantidade()%>">
                     </div>
 
                     <div class="half-box spacing">
-                        <label for="precoVenda">Preço de Venda</label>
+                        <label for="precoVenda">Sale price</label>
                         <input type="text" name="precoVenda" readonly="on" value="<%=produto.getPrecoVenda()%>" >
                     </div>
 
 
 
                     <div class="half-box spacing">
-                        <label for="estoque">Estoque</label>
+                        <label for="estoque">Stock</label>
                         <input type="number" name="estoque" value="<%=produto.getEstoque()%>" readonly="">
                     </div>
 
@@ -78,7 +78,7 @@
                     </div>
 
                     <div class="half-box spacing">
-                        <label for="categoria">Categoria</label>
+                        <label for="categoria">Category</label>
 
                         <main class="form-combobox">
                             <form method="post" action="/smartBuy/acao?param=selectProduto">
@@ -100,7 +100,7 @@
                                     %>
 
                                 </select>
-
+                            </form>
                         </main>
 
 
@@ -115,13 +115,24 @@
     </div>
                     -->
 
-                    <br>
+<!--                    <br>-->
                     <!--  <br>
                       <br>
                       
                       Foto
                       <input name="myFile" type="file" value=""> -->
 
+                    
+                    
+                    <div class="full-box">
+                        <label for="Image">Product image</label>
+                        <img src="file" alt="Image" height="42" width="42"/>
+                        <input type="file" accept="image/jpg, image/png" />
+                    </div>
+                    
+                    
+                    
+                    
                     <div class="full-box">
                         <input type="submit" id="btn-submit" value='Save'>
                     </div>
@@ -130,5 +141,7 @@
                 </form>
             </main>
         </div>
+    
+    
     </body>
 </html>

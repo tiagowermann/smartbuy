@@ -62,7 +62,7 @@ public final class paginainicial_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
       out.write("        <title>Smart Buy - Home</title>\n");
-      out.write("        \n");
+      out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"css/paginaInicialStyles.css\">\n");
       out.write("        \n");
       out.write("    </head>\n");
       out.write("    <body>\n");
