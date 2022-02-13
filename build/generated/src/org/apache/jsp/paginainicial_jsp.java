@@ -324,7 +324,7 @@ public final class paginainicial_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("\n");
       out.write("        \n");
       out.write("        \n");
-      out.write("        \n");
+      out.write("        <!--<input type=\"file\" accept=\"image/*\" />-->\n");
       out.write("        \n");
       out.write("    </body>\n");
       out.write("</html>\n");

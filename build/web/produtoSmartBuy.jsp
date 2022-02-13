@@ -115,24 +115,24 @@
     </div>
                     -->
 
-<!--                    <br>-->
+                    <!--                    <br>-->
                     <!--  <br>
                       <br>
                       
                       Foto
                       <input name="myFile" type="file" value=""> -->
 
-                    
-                    
+
+
                     <div class="full-box">
                         <label for="Image">Product image</label>
                         <img src="file" alt="Image" height="42" width="42"/>
                         <input type="file" accept="image/jpg, image/png" />
                     </div>
-                    
-                    
-                    
-                    
+
+
+
+
                     <div class="full-box">
                         <input type="submit" id="btn-submit" value='Save'>
                     </div>
@@ -141,7 +141,7 @@
                 </form>
             </main>
         </div>
-    
-    
+
+
     </body>
 </html>

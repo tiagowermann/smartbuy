@@ -3,15 +3,24 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/smartBuy/web/css/cadastroStyles.css</file>
-            <file>file:/C:/smartBuy/web/listaprodutoInicial.jsp</file>
+            <file>file:/C:/smartBuy/src/java/dao/ComprasRealizadasDAO.java</file>
             <file>file:/C:/smartBuy/web/paginainicial.jsp</file>
             <file>file:/C:/smartBuy/web/css/loginStyles.css</file>
-            <file>file:/C:/smartBuy/web/index.jsp</file>
-            <file>file:/C:/smartBuy/src/java/servlet/filtro.java</file>
+            <file>file:/C:/smartBuy/web/erroCompraProduto.jsp</file>
             <file>file:/C:/smartBuy/web/cadastroSmartBuy.jsp</file>
-            <file>file:/C:/smartBuy/web/css/paginaInicialStyles.css</file>
             <file>file:/C:/smartBuy/web/loginSmartBuy.jsp</file>
+            <file>file:/C:/smartBuy/web/css/cadastroStyles.css</file>
+            <file>file:/C:/smartBuy/web/listaprodutoInicial.jsp</file>
+            <file>file:/C:/smartBuy/web/produtoSmartBuy.jsp</file>
+            <file>file:/C:/smartBuy/src/java/servlet/acaoSmartBuy.java</file>
+            <file>file:/C:/smartBuy/src/java/dao/CompraProdutoDAO.java</file>
+            <file>file:/C:/smartBuy/web/erro.jsp</file>
+            <file>file:/C:/smartBuy/web/index.jsp</file>
+            <file>file:/C:/smartBuy/web/CarrinhoCompra.jsp</file>
+            <file>file:/C:/smartBuy/src/java/servlet/filtro.java</file>
+            <file>file:/C:/smartBuy/web/css/produtoSmartBuy.css</file>
+            <file>file:/C:/smartBuy/src/java/apoio/ConexaoBD.java</file>
+            <file>file:/C:/smartBuy/web/css/paginaInicialStyles.css</file>
         </group>
     </open-files>
 </project-private>

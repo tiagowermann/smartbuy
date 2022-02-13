@@ -27,10 +27,8 @@ import net.sf.jasperreports.engine.JasperRunManager;
  *
  * @author tiago
  */
-public class CompraProdutoDAO implements IDAO<Produto>{
+public class CompraProdutoDAO implements IDAO<Produto> {
 
-    
-    
     public String salvar(CompraProduto o) {
         try {
 //            Statement stm = ferrados.Ferrados.conexao.createStatement();
@@ -39,9 +37,9 @@ public class CompraProdutoDAO implements IDAO<Produto>{
             String sql = "INSERT INTO compraproduto VALUES "
                     + "(default,"
                     + " '" + o.getDescricao() + "',"
-                    + " '" + o.getQuantidade()+ "',"
-                    + " '" + o.getPrecoVenda()+ "',"
-                    + " '" + o.getSubtotal()+ "')";
+                    + " '" + o.getQuantidade() + "',"
+                    + " '" + o.getPrecoVenda() + "',"
+                    + " '" + o.getSubtotal() + "')";
 
             System.out.println("SQL: " + sql);
             System.out.println("Entrei no salvar compra produto!");
@@ -62,9 +60,9 @@ public class CompraProdutoDAO implements IDAO<Produto>{
 
             String sql = "UPDATE compraproduto "
                     + "SET descricao = '" + o.getDescricao() + "', "
-                    + "quantidade = '" + o.getQuantidade()+ "', "
-                    + "precoVenda = '" + o.getPrecoVenda()+ "', "
-                    + "subtotal = '" +o.getSubtotal()+ "'"
+                    + "quantidade = '" + o.getQuantidade() + "', "
+                    + "precoVenda = '" + o.getPrecoVenda() + "', "
+                    + "subtotal = '" + o.getSubtotal() + "'"
                     + "WHERE id = " + o.getId();
 
             System.out.println("SQL: " + sql);
@@ -112,7 +110,7 @@ public class CompraProdutoDAO implements IDAO<Produto>{
     }
 
     public ArrayList<CompraProduto> consultarTodasCompras() {
-        
+
         ArrayList<CompraProduto> compraProduto = new ArrayList();
 
         try {
@@ -192,8 +190,7 @@ public class CompraProdutoDAO implements IDAO<Produto>{
     public boolean consultar(Produto o) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
-    
+
     public Object consultarIdProduto(int id) {
         CompraProduto prod = null;
 
@@ -233,13 +230,8 @@ public class CompraProdutoDAO implements IDAO<Produto>{
     public String excluir(int id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
-    
-    
-    
-    
-    
-    public Object excluirProduto(int id){
+
+    public Object excluirProduto(int id) {
         CompraProduto prod = null;
 
         try {
@@ -280,7 +272,7 @@ public class CompraProdutoDAO implements IDAO<Produto>{
 
     @Override
     public ArrayList<Produto> consultarTodos() {
-        
+
         ArrayList<Produto> produto = new ArrayList();
 
         try {
@@ -312,17 +304,9 @@ public class CompraProdutoDAO implements IDAO<Produto>{
 
         return produto;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     public ArrayList<CompraProduto> consultarTodos2() {
-        
+
         ArrayList<CompraProduto> produto = new ArrayList();
 
         try {
@@ -355,16 +339,9 @@ public class CompraProdutoDAO implements IDAO<Produto>{
 
         return produto;
     }
-    
-    
-    
-    
-    
-    
-    
-    
+
     public String finalizaCompra() {
-        String saida = null;
+       String saida = null;
         try {
             Statement st = ConexaoBD.getInstance().getConnection().createStatement();
 
@@ -376,25 +353,25 @@ public class CompraProdutoDAO implements IDAO<Produto>{
             System.out.println("SQL: " + sql);
 
             int retorno = st.executeUpdate(sql);
-
+            
+            System.out.println("Retorno: " + retorno);
+            
             if (retorno != 0) {
                 saida = null;
+                System.out.println("saida: " + saida);
             } else {
                 saida = "Erro";
+                System.out.println("saida: " + saida);
             }
 
         } catch (Exception e) {
             System.out.println("Erro ao excluir compra do produto: " + e);
             saida = e.toString();
         }
-
+        System.out.println("Saida excluir compra do produto do Finaliza compra: " + saida);
         return saida;
     }
-    
-    
-    
-    
-    
+
     public String salvarCompra(CompraProduto o) {
         try {
 //            Statement stm = ferrados.Ferrados.conexao.createStatement();
@@ -403,9 +380,9 @@ public class CompraProdutoDAO implements IDAO<Produto>{
             String sql = "INSERT INTO comprasrealizadas VALUES "
                     + "(default,"
                     + " '" + o.getDescricao() + "',"
-                    + " '" + o.getQuantidade()+ "',"
-                    + " '" + o.getPrecoVenda()+ "',"
-                    + " '" + o.getSubtotal()+ "')";
+                    + " '" + o.getQuantidade() + "',"
+                    + " '" + o.getPrecoVenda() + "',"
+                    + " '" + o.getSubtotal() + "')";
 
             System.out.println("SQL: " + sql);
             System.out.println("Entrei no salvar compra produto!");
@@ -417,12 +394,7 @@ public class CompraProdutoDAO implements IDAO<Produto>{
             return e.toString();
         }
     }
-    
-    
-    
-    
-    
-    
+
     public String salvarTotal(CompraProduto o) {
         try {
 //            Statement stm = ferrados.Ferrados.conexao.createStatement();
@@ -432,10 +404,10 @@ public class CompraProdutoDAO implements IDAO<Produto>{
                     + "(default,"
                     + " default, "
                     + " '" + o.getDescricao() + "',"
-                    + " '" + o.getQuantidade()+ "',"
-                    + " '" + o.getPrecoVenda()+ "',"
-                    + " '" + o.getSubtotal()+ "',"
-                    + " '" + o.getTotal()+ "')";
+                    + " '" + o.getQuantidade() + "',"
+                    + " '" + o.getPrecoVenda() + "',"
+                    + " '" + o.getSubtotal() + "',"
+                    + " '" + o.getTotal() + "')";
 
             System.out.println("SQL: " + sql);
             System.out.println("Entrei no salvarTotal do ComprasRealizadasDAO");
@@ -447,12 +419,7 @@ public class CompraProdutoDAO implements IDAO<Produto>{
             return e.toString();
         }
     }
-    
-    
-    
-    
-    
-    
+
     public byte[] gerarRelatorio() {
         try {
             Connection conn = ConexaoBD.getInstance().getConnection();
@@ -470,11 +437,6 @@ public class CompraProdutoDAO implements IDAO<Produto>{
         return null;
     }
 
-    
-    
-    
-    
-    
     @Override
     public String atualizar(Produto o) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -484,5 +446,5 @@ public class CompraProdutoDAO implements IDAO<Produto>{
     public ArrayList<Produto> consultar(String criterio) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
 }

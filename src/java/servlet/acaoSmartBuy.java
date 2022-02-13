@@ -543,81 +543,10 @@ public class acaoSmartBuy extends HttpServlet {
 
         // ================= FINALIZA COMPRA ====================================OK
         if (param.equals("finalizaCompra")) {
-            //capturar dados que vieram do REQUEST
-            /*int id = Integer.parseInt(request.getParameter("id"));
-            String descricao = request.getParameter("descricao");
-            int quantidade = Integer.parseInt(request.getParameter("quantidade"));
-            double precoVenda = Double.parseDouble(request.getParameter("precoVenda"));
-            double subtotal = Double.parseDouble(request.getParameter("subtotal"));
-            double total = Double.parseDouble(request.getParameter("total"));
-            //System.out.println("precoVenda é: " + precoVenda);
-            System.out.println("Estou no açãoSmartBuy - finalizaCompra");
-            System.out.println("descricao: " +descricao);
-            System.out.println("quantidade: " +quantidade);
-            System.out.println("precoVenda: " +precoVenda);
-            System.out.println("subtotal: " +subtotal);
-            System.out.println("total: " +total);
-            //int estoque = Integer.parseInt(request.getParameter("estoque"));
-            //String status = request.getParameter("status");
-            //int categoria = Integer.parseInt(request.getParameter("categoria"));
-            //String imagem = request.getParameter("imagem");*/
-
-            // validacoes dos campos - não farei
-            // criar OBJ do tipo que será salvo*/
-            /*ComprasRealizadas p = new ComprasRealizadas();
-            p.setId(id);
-            p.setDescricao(descricao);
-            p.setQuantidade(quantidade);
-            p.setPrecoVenda(precoVenda);
-            p.setSubtotal(subtotal);
-            p.setTotal(total);
-            //p.setEstoque(estoque);
-            //p.setStatus(status.charAt(0));
-            //p.setCategoria(categoria);
-            //p.setImagem(imagem);
-            //System.out.println(status);*/
-            // chamar o deletar e aguardar o retorno 
-            
-            
-            /*String retorno = null;
-            //String retorno2 = null;
-
-            System.out.println("Estou no servlet ação - finalizaCompra!");
-            //retorno2 = new ComprasRealizadasDAO().salvarCompra(p);
-            retorno = new CompraProdutoDAO().finalizaCompra();
-
-            /*else {
-                retorno = new ProdutoDAO().atualizar(p);
-            }*/
-            /*if ((retorno != null)) {
-                // deu certo
-                request.setAttribute("tipoCadastro", "Categoria");
-                request.setAttribute("paginaRetorno", "CarrinhoCompra.jsp");
-
-                encaminharPagina("sucesso.jsp", request, response);
-            } else {
-                // deu errado
-                encaminharPagina("erro.jsp", request, response);
-            }
-            */
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+           
             String retorno2 = null;
             ArrayList<CompraProduto> compraProduto = new CompraProdutoDAO().consultarTodos2();
-            
-            
-            
+
             if (retorno2 == null) {
                 for (int i = 0; i < compraProduto.size(); i++) {
                     System.out.println("Entrei no primeiro for do finaliza compra");
@@ -632,53 +561,13 @@ public class acaoSmartBuy extends HttpServlet {
                     System.out.println("Cheguei no fim do primeiro for do finaliza compra");
                     //ArrayList<ComprasRealizadas> compraRealizada = new ArrayList<>();
                     new ComprasRealizadasDAO().salvarCompra(prod);
-                    
-                    
-                    
-                    /*for (int j = 0; j < compraRealizada.size(); j++) {
-                        System.out.println("Entrei no segundo for do finaliza compra");
-                        ComprasRealizadas prod2 = compraRealizada.get(j);
-                        String SimpleDateFormat = null;
 
-                        prod2.setDataCompra(SimpleDateFormat);
-                        System.out.println("Data da compra: " + prod2.getDataCompra());
-                        prod2.setIdProduto(prod.getId());
-                        System.out.println("Id do Produto: " + prod2.getIdProduto());
-                        prod2.setIdUsuario(2);
-                        System.out.println("Id do Usuário: " + prod2.getIdUsuario());
-                        prod2.setPrecoVenda(prod.getPrecoVenda());
-                        System.out.println("Preço de venda: " + prod2.getPrecoVenda());
-                        prod2.setQuantidade(prod.getQuantidade());
-                        System.out.println("Quantidade: " + prod2.getQuantidade());
-                        prod2.setSubtotal(100.00);
-                        System.out.println("Subtotal: " + prod2.getSubtotal());
-                        prod2.setTotal(2000.00);
-                        System.out.println("Total: " + prod2.getTotal());
-                        new ComprasRealizadasDAO().salvarCompra(prod2);
-                    }*/
+                  
                 }
+
             }
 
-            // validacoes dos campos - não farei
-            // criar OBJ do tipo que será salvo*/
-            /*ComprasRealizadas p = new ComprasRealizadas();
-            p.setId(id);
-            p.setDescricao(descricao);
-            p.setQuantidade(quantidade);
-            p.setPrecoVenda(precoVenda);
-            p.setSubtotal(subtotal);
-            p.setTotal(total);
-            //p.setEstoque(estoque);
-            //p.setStatus(status.charAt(0));
-            //p.setCategoria(categoria);
-            //p.setImagem(imagem);
-            //System.out.println(status);*/
-            // chamar o deletar e aguardar o retorno 
             
-            
-            //String retorno = null;
-            //String retorno2 = null;
-
             System.out.println("Estou no servlet ação - finalizaCompra!");
             //retorno2 = new ComprasRealizadasDAO().salvarCompra(p);
             retorno2 = new CompraProdutoDAO().finalizaCompra();
@@ -694,23 +583,15 @@ public class acaoSmartBuy extends HttpServlet {
                 encaminharPagina("sucesso.jsp", request, response);
             } else {
                 // deu errado
-                encaminharPagina("erro.jsp", request, response);
+                encaminharPagina("erroCompraProduto.jsp", request, response);
             }
 
         }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-  
 
+        
+        
+        
+        
         // ================= SELECIONA PRODUTO =================================
         if (param.equals("selectProduto")) {
             //String descricao = request.getParameter("descricao");
